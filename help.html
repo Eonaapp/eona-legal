@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eona Help Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #846BCE;
+      --text: #312A39;
+      --muted: #6F7585;
+      --link: #846BCE;
+      --max-width: 720px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, rgba(245,227,195,0.30) 0%, rgba(214,198,230,0.15) 50%, rgba(182,160,229,0.15) 100%);
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+      line-height: 1.6;
+    }
+
+    .card {
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: var(--max-width);
+    }
+
+    h1 {
+      font-family: 'PT Serif', serif;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    h1::before {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url('logo_a.png') no-repeat center;
+      background-size: contain;
+    }
+
+    .updated {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    section + section {
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+
+    h2 {
+      font-family: 'PT Serif', serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    p, ul, ol {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.25rem;
+    }
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    em {
+      font-style: normal;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(111, 117, 133, 0.1);
+      font-size: 0.9rem;
+    }
+
+    .footer p + p {
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      
+      .card {
+        padding: 2rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <h1>Eona Help Center</h1>
+    <p class="updated">Last updated: July 22, 2025</p>
+
+    <p>
+      If you don't find your answer here, email us at
+      <a href="mailto:support@eona.app">support@eona.app</a> or
+      fill in our assistance inquiry form.
+    </p>
+
+    <section>
+      <h2>What is Eona?</h2>
+      <p>
+        Eona is a self-discovery app that combines Tarot, BaZi, and I-Ching to
+        offer gentle guidance and reflection. It's meant to support your
+        intuition — not predict the future.
+      </p>
+    </section>
+
+    <section>
+      <h2>Is Eona free?</h2>
+      <p>
+        Eona offers both free and paid readings. Every day you can get one
+        reading for free.<br>
+        We also offer premium subscription for deeper guidance and unlimited
+        readings.
+      </p>
+    </section>
+
+    <section>
+      <h2>What do I get with a subscription?</h2>
+      <ul>
+        <li>Unlimited Tarot readings & follow-up conversations</li>
+        <li>
+          Personalized readings based on your Energy Profile (BaZi, Zodiac,
+          MBTI, etc.)
+        </li>
+        <li>Priority access to new features</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How do the "daily" features work?</h2>
+      <ul>
+        <li><strong>Morning:</strong> Tarot focus to set your intention</li>
+        <li><strong>During the day:</strong> I-Ching coin toss for decision guidance</li>
+        <li><strong>Evening:</strong> BaZi reflection to realign and review</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How do Tarot readings work in Eona?</h2>
+      <p>
+        You type a question, draw cards, and receive an interpretation. You
+        can ask follow-up questions until you feel clear.
+      </p>
+    </section>
+
+    <section>
+      <h2>How do I cancel my subscription? (iOS)</h2>
+      <ol>
+        <li>Open <em>Settings</em> on your iPhone</li>
+        <li>Tap your Apple ID → <em>Subscriptions</em></li>
+        <li>Select <em>Eona</em> and tap <strong>Cancel</strong></li>
+        <li style="font-style: italic;">Cancel at least 24 hours before the renewal date to avoid being charged.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>How do I request a refund? (iOS)</h2>
+      <p>Apple manages all refunds.</p>
+      <ul>
+        <li>Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a></li>
+        <li>Sign in with your Apple ID</li>
+        <li>Choose <em>Request a refund</em> and select Eona</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How do I restore my purchase?</h2>
+      <ul>
+        <li>Open Eona → <em>Profile</em> → <strong>Restore Purchases</strong></li>
+        <li style="font-style: italic;">Make sure you're logged in with the same Apple ID you used to subscribe</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How do I delete my account/data?</h2>
+      <p>
+        In the app: <em>Profile/Manage Account</em> → <strong>Delete Account</strong>.<br>
+        This permanently removes your data from our servers.
+      </p>
+    </section>
+
+    <section>
+      <h2>Is my information private?</h2>
+      <p>
+        Yes. Your questions and reports are confidential. See our full
+        <a href="https://eona.app/privacy">Privacy Policy here</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Having trouble loading or crashing?</h2>
+      <ul>
+        <li>Check you're on the latest iOS and Eona version</li>
+        <li>Restart the app/device</li>
+        <li>
+          If it persists, contact us at
+          <a href="mailto:support@eona.app">support@eona.app</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="footer">
+      <p><strong>Still need help?</strong></p>
+      <p>
+        Email: <a href="mailto:support@eona.app">support@eona.app</a>
+      </p>
+      <p>
+        <a href="https://eona.app/terms">Terms of Use</a> | 
+        <a href="https://eona.app/privacy">Privacy Policy</a>
+      </p>
+    </section>
+  </article>
+</body>
+</html>
